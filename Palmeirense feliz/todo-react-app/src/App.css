@@ -1,0 +1,143 @@
+/* Importação da fonte do Google Fonts diretamente no CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2a292b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #2e5032; /* Tom de verde ajustado */
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #35b130; /* Tom de verde ajustado */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #35b130; /* Tom de verde ajustado */
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #35b130; /* Tom de verde ajustado */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.Todo:hover {
+  background: #287d4c; /* Nova cor de fundo ao passar o mouse */
+}
+
+/* Efeitos de hover para ícones */
+.edit-icon:hover,
+.delete-icon:hover {
+  filter: brightness(80%); /* Escurece os ícones ao passar o mouse */
+}
+
+/* Animações para as tasks */
+.slide-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+.Todo.completed {
+  background-color: #64c172; /* ou qualquer outra cor desejada */
+}
+
+.white-text {
+  color: white;
+}
+
+
+body {
+  background: url('./images/mancha.jpg') center center fixed; /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
